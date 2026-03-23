@@ -1,0 +1,47 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Pick the yellow cube and place it in the orange box)
+    (:regions
+      (cube_region
+          (:target main_table)
+          (:ranges (
+              (-0.20 -0.20 0.15 0.20)
+            )
+          )
+      )
+      (box_region
+          (:target main_table)
+          (:ranges (
+              (-0.20 -0.20 0.15 0.20)
+            )
+          )
+      )
+      (contain_region
+          (:target orange_box_1)
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    yellow_cube_1 - yellow_cube
+    orange_box_1 - orange_box
+  )
+
+  (:obj_of_interest
+    yellow_cube_1
+    orange_box_1
+  )
+
+  (:init
+    (On yellow_cube_1 main_table_cube_region)
+    (On orange_box_1 main_table_box_region)
+  )
+
+  (:goal
+    (And (In yellow_cube_1 orange_box_1_contain_region))
+  )
+
+)

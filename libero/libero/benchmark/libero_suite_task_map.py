@@ -1,4 +1,10 @@
 libero_task_map = {
+    "libero_simple": [
+        "pick_up_the_red_cube_and_place_it_in_the_brown_box",
+        "pick_up_the_green_cube_and_place_it_in_the_blue_box",
+        "pick_up_the_blue_cube_and_place_it_in_the_green_box",
+        "pick_up_the_yellow_cube_and_place_it_in_the_orange_box",
+    ],
     "libero_spatial": [
         "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
         "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
